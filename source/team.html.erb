@@ -1,0 +1,15 @@
+---
+title: Le Wagon - Middleman - Team
+---
+<div class="container">
+<h2 style="text-align: center">This Page Was Made with Love BY</h2>
+<ul class="list-inline text-center">
+  <% %w(alextricityy vendedraug).each do |gh_username| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+      <h3><%= gh_username.capitalize %></h3>
+      <p><a href="https://www.github.com/<%= gh_username %>"><%= gh_username %></a></p>
+    </li>
+  <% end %>
+</ul>
+</div>
